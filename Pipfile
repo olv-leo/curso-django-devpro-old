@@ -6,11 +6,11 @@ name = "pypi"
 [packages]
 django = "==3.2.13"
 gunicorn = "*"
-asgiref = "*"
 
 [dev-packages]
 flake8 = "*"
 pytest-django = "*"
+asgiref = "==3.4.1"
 
 [requires]
 python_version = "3.9"
