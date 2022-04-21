@@ -3,14 +3,12 @@ version:
   - 3.9
 
 install:
-  - pip install pipenv
-  - pipenv install --dev
+  - pip install pipenv codecov
+  - pipenv sync --dev
 
 script:
-  - pipenv shell
-  - flake8
-  - pytest --cov=pypro
-  - exit
+  - pipenv run flake8
+  - pipenv run pytest pypro --cov=pypro
 
 after_success:
   - pipenv run codecov
