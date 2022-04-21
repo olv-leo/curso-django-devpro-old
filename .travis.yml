@@ -7,8 +7,10 @@ install:
   - pipenv install --dev
 
 script:
+  - pipenv shell
   - flake8
-  - pipenv run pytest --cov=pypro
+  - pytest --cov=pypro
+  - exit
 
 after_success:
   - pipenv run codecov
