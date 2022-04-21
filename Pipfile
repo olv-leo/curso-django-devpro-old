@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "==3.2.13"
 gunicorn = "*"
+tomli = "==1.2.3"
 
 [dev-packages]
 flake8 = "*"
