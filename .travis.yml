@@ -5,6 +5,7 @@ version:
 install:
   - pip install pipenv codecov
   - pipenv sync --dev
+  - cp contrib/env-sample .env
 
 script:
   - flake8
