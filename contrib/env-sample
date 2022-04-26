@@ -5,3 +5,4 @@ DATABASE_URL=postgres://postgres:postgres@localhost/testdb
 
 AWS_ACCESS_KEY_ID= chave de acesso
 AWS_SECRET_ACCESS_KEY= chave secreta
+AWS_STORAGE_BUCKET_NAME= nome do bucket
