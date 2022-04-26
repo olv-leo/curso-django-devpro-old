@@ -4,17 +4,13 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==3.2.13"
-gunicorn = "*"
-tomli = "==1.2.3"
+pytest = "*"
+pytest-cov = "*"
+coverage = "*"
+django = "*"
+flake8 = "*"
 
 [dev-packages]
-flake8 = "*"
-pytest-django = "*"
-pytest-cov = "*"
-codecov = "*"
-coverage = "==6.2"
-asgiref = "==2.1.1"
 
 [requires]
-python_version = "3.9"
+python_version = "3.10"
