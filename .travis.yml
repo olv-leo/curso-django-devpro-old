@@ -4,7 +4,7 @@ version:
 
 install:
   - pip install pipenv codecov
-  - pipenv sync --dev
+  - pipenv install --dev
 
 script:
   - flake8
