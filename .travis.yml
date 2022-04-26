@@ -3,8 +3,12 @@ version:
   - 3.9
 
 install:
-  - pip install pipenv
+  - pip install pipenv codecov
   - pipenv sync --dev
+  - cp contrib/env-sample .env
 
 script:
   - flake8
+
+after_success:
+  - pipenv run codecov
