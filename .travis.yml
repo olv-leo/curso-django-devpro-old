@@ -1,6 +1,6 @@
 language: python
-version:
-  - 3.9
+python:
+  - "3.9"
 
 install:
   - pip install pipenv codecov
@@ -9,6 +9,7 @@ install:
 
 script:
   - flake8
+  - pipenv run pytest --cov=pypro
 
 after_success:
   - pipenv run codecov

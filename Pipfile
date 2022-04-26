@@ -4,9 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==3.2.13"
+django = "*"
 gunicorn = "*"
-tomli = "==1.2.3"
 python-decouple = "*"
 
 [dev-packages]
@@ -14,7 +13,7 @@ flake8 = "*"
 pytest-django = "*"
 pytest-cov = "*"
 codecov = "*"
-coverage = "==6.2"
+coverage = "*"
 
 [requires]
 python_version = "3.9"
