@@ -15,7 +15,6 @@ pytest-django = "*"
 pytest-cov = "*"
 codecov = "*"
 coverage = "==6.2"
-asgiref = "==2.1.1"
 
 [requires]
 python_version = "3.9"
