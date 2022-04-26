@@ -3,6 +3,7 @@ SECRET_KEY=defina sua chave secreta aqui
 ALLOWED_HOSTS=127.0.0.1, localhost
 DATABASE_URL=postgres://postgres:postgres@localhost/testdb
 
-AWS_ACCESS_KEY_ID= chave de acesso
-AWS_SECRET_ACCESS_KEY= chave secreta
-AWS_STORAGE_BUCKET_NAME= nome do bucket
+# Configurações do AWS
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_STORAGE_BUCKET_NAME=
