@@ -1,14 +1,14 @@
 {% extends 'base/base.html' %}
 {% load static %}
-{% block title %}Python Pro - Aperitivo{% endblock title %}
+{% block title %}{{ video.page_title }}{% endblock title %}
 {% block description %}Página com vídeo gratuito de Python.{% endblock description %}
 
 {% block body %}
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="mt-4 mb-3">Vídeo Aperitivo: Motivação</h1>
-            <iframe src="https://player.vimeo.com/video/705098707?h=a5468669ed" width="640" height="360" frameborder="0"
+            <h1 class="mt-4 mb-3">{{ video.titulo | default:"Título em branco" }}</h1>
+            <iframe src="https://player.vimeo.com/video/{{ video.vimeo_id }}" width="640" height="360" frameborder="0"
                     allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
