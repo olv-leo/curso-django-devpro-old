@@ -10,7 +10,7 @@
             <h1 class="mt-4 mb-3">Lista de vídeos gratuitos</h1>
             <ol>
                 {% for video in videos %}
-                <li>{{ video.titulo }}</li>
+                <li><a href="{{ video.get_absolute_url }}" target="_blank">{{ video.titulo }}</a></li>
                 {% empty %}
                 Nenhum vídeo disponível.
                 {% endfor %}
