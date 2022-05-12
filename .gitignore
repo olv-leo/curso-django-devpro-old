@@ -129,8 +129,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Pycharm
+# Pycharm e VS Code
 .idea/
+.vscode/
 
 # Postgres files for local developement
 .pgdata
