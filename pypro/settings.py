@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'collectfast',
     'django.contrib.staticfiles',
     'pypro.aperitivos',
-    'pypro.modulos'
+    'pypro.modulos',
+    'ordered_model',
 ]
 
 MIDDLEWARE = [
